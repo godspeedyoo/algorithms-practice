@@ -12,6 +12,14 @@ class Stack
 		@store.pop
 	end
 
+	def top
+		@store[-1]
+	end
+
+	def empty?
+		@store.empty?
+	end
+
 	def size
 		@store.length
 	end
