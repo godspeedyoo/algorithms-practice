@@ -39,9 +39,6 @@ def get_subarrays(integers)
 	while i > 0
 		target_num = integers[i]
 		rest_of_integers = integers[0..i]
-
-		# pop off the highest num and call get_outcomes
-		# call get_outcomes(target_num, rest_of_integers)
 		puts "Checking subarrays for #{target_num} with #{rest_of_integers}"
 		sub_arrays += get_outcomes(target_num, rest_of_integers)
 		i -= 1
