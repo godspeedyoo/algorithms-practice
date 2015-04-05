@@ -48,4 +48,4 @@ def get_subarrays(integers)
 end
 
 
-p get_subarrays([1,2,3,4,6])
+p get_subarrays([1,2,3])
