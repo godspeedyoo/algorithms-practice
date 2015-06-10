@@ -9,8 +9,8 @@ end
 # Iterative 
 def in_order_iterative(node)
 	parent_stack = []
-	while !node.nil? || !parent_stack.empty?
-		if node
+	while !parent_stack.empty?
+		if !node.nil?
 			parent_stack << node
 			node = node.left
 		else
