@@ -1,5 +1,9 @@
 modules = [
-  'union_find'
+  'union_find',
+  'stacks_and_queues',
+  'percolation',
+  'heap',
+  'sort'
 ]
 
 load_paths = modules.map { |mod| File.expand_path(Dir.pwd) + "/lib/#{mod}" }

@@ -1,12 +1,7 @@
-describe UnionFind do
-  let(:uf) { UnionFind.new(5) }
+describe Percolation::UnionFind do
+  let(:uf) { Percolation::UnionFind.new(5) }
 
   describe 'connected?' do
-    it 'raises an error when p or q are out of bounds' do
-      expect{ uf.connected?(100, 1) }
-      .to raise_error(UnionFind::ElementNotFoundError)
-    end
-
     it 'returns true for the same nodes' do
       expect(uf.connected?(0, 0)).to eq(true)
     end
